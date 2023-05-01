@@ -3,3 +3,141 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  color: unset;
+  text-decoration: none;
+}
+body {
+  background-color: #e4e8ed;
+  min-height: 100vh;
+}
+.header {
+  height: 70px;
+  background-color: #006595;
+  background-repeat: repeat-x;
+  /* background-image: url(../img/juegos2.jpg); */
+  width: 100%;
+}
+.navBar {
+  height: 35px;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+.navBar--content {
+  height: 30px;
+}
+.navBar--top {
+  background-color: black;
+  color: white;
+}
+.navBar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar__item {
+  height: 100%;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  color: #6c7d8d;
+}
+.navBar--top .menu {
+  color: white;
+}
+.menu li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+}
+.menu--content {
+  gap: 10px;
+}
+.menu--content li {
+  padding: 5px 10px;
+}
+.navBar__item:last-child .menu li {
+  padding: 7px 10px;
+}
+.menu li:hover {
+  background-color: rgba(164, 163, 255, 0.233);
+}
+.avatar {
+  height: 25px;
+}
+.avatar img {
+  max-height: 100%;
+  width: auto;
+  margin-left: 10px;
+  box-shadow: 0 0 10px #6f7c89;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0px 10px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  min-height: 100vh;
+  background-color: white;
+  border-left: 1px solid #cdd0d4;
+  border-right: 1px solid #cdd0d4;
+  padding-top: 5px;
+}
+.content .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sepMenu {
+  margin: 5px -8px;
+  border: 1px solid #cdd0d4;
+  border-bottom: 0;
+}
+.search {
+  position: relative;
+}
+.search input {
+  padding: 0px 10px;
+  padding-right: 30px;
+  width: 240px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+.search input:focus-visible {
+  outline: none;
+}
+.icon-magnify {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+.sprite {
+  background-image: url(../img/icon/sprites.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 5px;
+  height: 16px;
+  width: 16px;
+  background-position: 0px 0px;
+}

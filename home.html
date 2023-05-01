@@ -4,9 +4,142 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>inicio</title>
   </head>
   <body>
-    <header class="header"></header>
+    <nav class="navBar navBar--top">
+      <div class="container">
+        <div class="navBar__item">
+          <ul class="menu">
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">Series</a></li>
+            <li><a href="">Juegos</a></li>
+          </ul>
+        </div>
+        <div class="navBar__item">
+          <ul class="menu">
+            <li>
+              <a href="">
+                <svg class="icon icon-bell">
+                  <use xlink:href="img/icon/icons.svg#icon-bell"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="icon icon-heart">
+                  <use xlink:href="img/icon/icons.svg#icon-heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="icon icon-email">
+                  <use xlink:href="img/icon/icons.svg#icon-email"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <span>Fulano</span>
+              <div class="avatar">
+                <img src="img/avatar/avatar.jpg" alt="" />
+              </div>
+            </li>
+            <li>
+              <a href="">
+                <svg class="icon icon-exit">
+                  <use xlink:href="img/icon/icons.svg#icon-exit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <a href=""><img src="img/logo.png" alt="" /></a>
+      </div>
+    </header>
+    <section class="container content">
+      <nav class="navBar navBar--content">
+        <div class="navBar__item">
+          <ul class="menu menu--content">
+            <li>
+              <a href="">
+                <svg class="icon icon-house">
+                  <use xlink:href="img/icon/icons.svg#icon-house"></use>
+                </svg>
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="icon icon-bubbles">
+                  <use xlink:href="img/icon/icons.svg#icon-bubbles"></use>
+                </svg>
+                Comunidades
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="icon icon-layers">
+                  <use xlink:href="img/icon/icons.svg#icon-layers"></use>
+                </svg>
+                Tops
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <svg class="icon icon-edit">
+                  <use xlink:href="img/icon/icons.svg#icon-edit"></use>
+                </svg>
+                Publicar
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="navBar__item search">
+          <input type="text" placeholder="Buscar..." />
+          <svg class="icon icon-magnify">
+            <use xlink:href="img/icon/icons.svg#icon-magnify"></use>
+          </svg>
+        </div>
+      </nav>
+      <hr class="sepMenu" />
+      <main>
+        <select name="" id="">
+          <option value="">Filtrar Categorias</option>
+          <option value="" disabled="disabled">----------</option>
+          <option value="">Comics</option>
+          <option value="">Vdieojuegos</option>
+          <option value="">Peliculas</option>
+          <option value="">Series</option>
+          <option value="">Musica</option>
+          <option value="">Software</option>
+          <option value="">Deportes</option>
+          <option value="">Anime/Manga</option>
+          <option value="">Gastronomia</option>
+          <option value="">Tutoriales</option>
+          <option value="">Imagenes</option>
+          <option value="">Noticias</option>
+          <option value="">Programacion</option>
+          <option value="">Salud</option>
+          <option value="">Arte</option>
+        </select>
+        <i class="sprite"></i>
+      </main>
+      <aside></aside>
+      <aside></aside>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
