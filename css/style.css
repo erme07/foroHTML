@@ -240,8 +240,8 @@ main {
   padding-left: 10px;
   padding-right: 8px;
   padding-top: 12px;
-  height: 600px;
-  flex-basis: 340px;
+  min-height: 600px;
+  flex-basis: 360px;
   color: #444444;
 }
 .estadisticas {
@@ -254,32 +254,69 @@ main {
   justify-content: space-between;
   font-size: 12px;
   gap: 5px;
-  padding: 10px;
-  padding-top: 8px;
+  padding: 8px 10px 15px;
+  /* padding-top: 8px; */
 }
 .boton-mas {
   background-color: #e8e8e8;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   display: block;
-  padding: 5px;
+  padding: 7px;
 }
 
 .boton-mas:hover {
   background-color: #d0d0d0;
 }
 .ult-coment {
-  margin-top: 20px;
+  margin-top: 17px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
 }
 .ult-coment__user {
   color: #868686;
   margin-right: 5px;
+  height: 16px;
 }
 .ult-coment__user:hover {
   color: #006595;
 }
+.top-post {
+  margin-top: 17px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 12px;
+  font-weight: bold;
+}
+.top-post__item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 7px;
+}
+.top-post__item:nth-child(even) {
+  background-color: #e8e8e8;
+  border-top: 1px solid #d2d2d2;
+}
+.top-post__item a {
+  flex-grow: 1;
+}
+.top-post__number {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+.top-post__point {
+  width: 35px;
+  height: 16px;
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .sidebar-2 {
-  flex-basis: 258px;
+  flex-basis: 238px;
   padding-left: 10px;
   padding-right: 8px;
   padding-top: 12px;
