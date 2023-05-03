@@ -96,6 +96,7 @@ body {
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .content {
@@ -322,4 +323,9 @@ main {
   padding-top: 12px;
   height: 500px;
   /* background-color: #6c7d8d; */
+}
+.sidebar-ad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
