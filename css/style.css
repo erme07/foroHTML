@@ -7,13 +7,22 @@ a {
   color: unset;
   text-decoration: none;
 }
+:root {
+  --mainBackColor: #e4e8ed;
+  --itemBackColor: #ddd;
+  --itemBorderColor: #bbb;
+  --headerBackColor: #006595;
+  --borderBox: #999;
+  --borderSeparator: #ddd;
+}
 body {
   background-color: #e4e8ed;
   min-height: 100vh;
+  position: relative;
 }
 .header {
   height: 70px;
-  background-color: #006595;
+  background-color: var(--headerBackColor);
   background-repeat: repeat-x;
   /* background-image: url(../img/juegos2.jpg); */
   width: 100%;
@@ -24,10 +33,24 @@ body {
   font-family: "Oswald", sans-serif;
 }
 .navBar--content {
-  height: 30px;
+  height: 40px;
   flex-basis: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--borderBox);
+}
+.navBar--bottom {
+  margin-top: 30px;
+  border-top: 1px solid var(--borderBox);
+}
+.toTheTop {
+  font-family: Helvetica;
+  color: #777777;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.toTheTop:hover {
+  color: #444444;
 }
 .navBar--top {
   background-color: black;
@@ -102,27 +125,19 @@ body {
 .content {
   min-height: 100vh;
   background-color: white;
-  border-left: 1px solid #cdd0d4;
-  border-right: 1px solid #cdd0d4;
+  border-left: 1px solid var(--borderBox);
+  border-right: 1px solid var(--borderBox);
   padding: 0;
-  padding-top: 5px;
   font-family: Helvetica;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .content .navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.sepMenu {
-  /* margin: 5px -10px;
-  margin-bottom: 0; */
-  margin-top: 5px;
-  border: 1px solid #cdd0d4;
-  border-bottom: 0;
-  flex-basis: 100%;
 }
 .search {
   position: relative;
@@ -144,7 +159,7 @@ body {
   bottom: 8px;
 }
 main {
-  border-right: 2px dashed #e8e8e8;
+  border-right: 2px dashed var(--borderSeparator);
   padding-left: 10px;
   padding-right: 8px;
   padding-top: 12px;
@@ -216,8 +231,8 @@ main {
   padding: 5px 10px;
 }
 .item-list li:nth-child(even) {
-  background-color: #e8e8e8;
-  border-top: 1px solid #d2d2d2;
+  background-color: var(--itemBackColor);
+  border-top: 1px solid var(--itemBorderColor);
 }
 .item-list a:hover {
   text-decoration: underline;
@@ -237,7 +252,7 @@ main {
 }
 .sidebar-1 {
   /* background-color: aqua; */
-  border-right: 2px dashed #e8e8e8;
+  border-right: 2px dashed var(--borderSeparator);
   padding-left: 10px;
   padding-right: 8px;
   padding-top: 12px;
@@ -247,7 +262,7 @@ main {
 }
 .estadisticas {
   padding-bottom: 10px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--borderSeparator);
 }
 .estadisticas__content {
   display: flex;
@@ -259,7 +274,8 @@ main {
   /* padding-top: 8px; */
 }
 .boton-mas {
-  background-color: #e8e8e8;
+  background-color: var(--itemBackColor);
+  border-top: 1px solid var(--itemBorderColor);
   text-align: center;
   font-size: 11px;
   display: block;
@@ -272,7 +288,7 @@ main {
 .ult-coment {
   margin-top: 17px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--borderSeparator);
 }
 .ult-coment__user {
   color: #868686;
@@ -282,33 +298,53 @@ main {
 .ult-coment__user:hover {
   color: #006595;
 }
-.top-post {
+.topList {
   margin-top: 17px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--borderSeparator);
+  color: #444444;
   font-size: 12px;
   font-weight: bold;
 }
-.top-post__item {
+.topList--users {
+  margin-top: 0;
+}
+.topList__item {
   display: flex;
   align-items: center;
   padding: 5px 10px;
   gap: 7px;
 }
-.top-post__item:nth-child(even) {
-  background-color: #e8e8e8;
-  border-top: 1px solid #d2d2d2;
+.topList__item--first {
+  align-items: flex-start;
+  gap: 10px;
 }
-.top-post__item a {
+.topList__item--first img {
+  width: 55px;
+  height: 55px;
+}
+.topList__item--second {
+  align-items: flex-start;
+  gap: 10px;
+}
+.topList__item--second img {
+  width: 40px;
+  height: 40px;
+}
+.topList__item:nth-child(even) {
+  background-color: var(--itemBackColor);
+  border-top: 1px solid var(--itemBorderColor);
+}
+.topList__item a {
   flex-grow: 1;
 }
-.top-post__number {
+.topList__number {
   width: 16px;
   height: 16px;
   display: flex;
   align-items: center;
 }
-.top-post__point {
+.topList__point {
   width: 35px;
   height: 16px;
   color: green;
@@ -316,16 +352,114 @@ main {
   align-items: center;
   justify-content: flex-end;
 }
+.topUser {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+}
+.topUser__name {
+  font-size: 13px;
+}
+.topUser__follow {
+  background-color: #b7b7b7;
+  display: flex;
+  width: 75px;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
 .sidebar-2 {
   flex-basis: 238px;
   padding-left: 10px;
   padding-right: 8px;
   padding-top: 12px;
   height: 500px;
-  /* background-color: #6c7d8d; */
 }
 .sidebar-ad {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px 0;
+}
+
+.tags__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: center;
+  font-weight: bold;
+  color: #444444;
+  gap: 5px;
+}
+
+.level0 {
+  font-size: 22px;
+  color: #1b1b1b;
+}
+.level1 {
+  font-size: 20px;
+  color: #2e2e2e;
+}
+.level2 {
+  font-size: 18px;
+  color: #2e2e2e;
+}
+.level3 {
+  font-size: 16px;
+  color: #3d3d3d;
+}
+.level4 {
+  font-size: 14px;
+  color: #3d3d3d;
+}
+.level5 {
+  font-size: 12px;
+}
+
+.ad-left {
+  position: fixed;
+  top: 100px;
+}
+footer {
+  height: 100px;
+  background-color: #006595;
+}
+.pagination {
+  background-color: var(--itemBackColor);
+  border-top: 1px solid var(--itemBorderColor);
+  text-align: center;
+  font-size: 11px;
+  display: block;
+  padding: 7px;
+}
+.pagination a:hover {
+  text-decoration: underline;
+}
+.bordersBottom {
+  position: relative;
+  flex-basis: 100%;
+}
+
+.bordersBottom::after,
+.bordersBottom::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border: 1px solid var(--borderBox);
+  border-top: 0;
+  background-color: white;
+}
+.bordersBottom::before {
+  width: 984px;
+  top: 0;
+  left: 6px;
+}
+.bordersBottom::after {
+  width: 972px;
+  top: 4px;
+  left: 12px;
 }
