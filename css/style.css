@@ -425,8 +425,20 @@ main {
   top: 100px;
 }
 footer {
-  height: 100px;
+  height: 70px;
   background-color: #006595;
+}
+.footer__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+.footer__menu a:hover {
+  text-decoration: underline;
 }
 .pagination {
   background-color: var(--itemBackColor);
