@@ -67,7 +67,7 @@
     <header class="header">
       <div class="container">
         <a href=""><img src="img/logo.png" alt="" /></a>
-        <img src="img/ads-468x60.jpg" alt="" />
+        <img class="ad468x60" src="img/ads-468x60.jpg" alt="" />
       </div>
     </header>
     <section class="container content">
@@ -82,14 +82,14 @@
                 Inicio
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="">
                 <svg class="icon icon-bubbles">
                   <use xlink:href="img/icon/icons.svg#icon-bubbles"></use>
                 </svg>
                 Comunidades
               </a>
-            </li>
+            </li> -->
             <li>
               <a href="">
                 <svg class="icon icon-layers">
@@ -114,6 +114,14 @@
                 Publicar
               </a>
             </li>
+            <li class="secondSearch">
+              <a href="">
+                <svg class="icon">
+                  <use xlink:href="img/icon/icons.svg#icon-magnify"></use>
+                </svg>
+                Buscar
+              </a>
+            </li>
           </ul>
         </div>
         <div class="navBar__item search">
@@ -125,7 +133,7 @@
       </nav>
       <!-- <hr class="sepMenu" /> -->
       <main>
-        <div class="block-header">
+        <div class="block__header">
           <h3>Ultimos Post</h3>
           <select name="" id="">
             <option value="">Filtrar Categorias</option>
@@ -147,7 +155,7 @@
             <option value="">Arte</option>
           </select>
         </div>
-        <ul class="item-list">
+        <ul class="itemList">
           <li>
             <span class="category category-series"></span>
             <a href="">
@@ -278,7 +286,7 @@
           <li>
             <span class="category category-tutorial"></span>
             <a href="">
-              <span>Cómo Crear una Landing Page con WordPress Desde 0</span>
+              <span>Cómo Crear una Landing Page con WordPress</span>
             </a>
           </li>
           <li>
@@ -379,11 +387,14 @@
         <div class="pagination"><a href="">Siguiente</a></div>
       </main>
       <aside class="sidebar-1">
-        <div class="estadisticas">
-          <div class="block-header">
+        <div class="adWide">
+          <img src="img/ads-728x90.jpg" alt="" />
+        </div>
+        <div class="estadisticas block">
+          <div class="block__header">
             <h3>Estadisticas</h3>
           </div>
-          <div class="estadisticas__content">
+          <div class="block__content estadisticas__content">
             <p><strong>1230000</strong> Usuarios Online</p>
             <p><strong>1230000</strong> Miembros</p>
             <p><strong>1230000</strong> Post</p>
@@ -391,75 +402,75 @@
           </div>
           <a class="boton-mas" href="">Ver más</a>
         </div>
-        <div class="ult-coment">
-          <div class="block-header">
+        <div class="block lastComents">
+          <div class="block__header">
             <h3>Ultimos comentarios</h3>
           </div>
-          <ul class="item-list">
+          <ul class="itemList">
             <li>
-              <a class="ult-coment__user" href="">elfInvOR</a>
+              <a class="lastComents__user" href="">elfInvOR</a>
               <a href="">
                 <span>Inuyashiki Last Hero E1</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">hOncOm</a>
+              <a class="lastComents__user" href="">hOncOm</a>
               <a href="">
                 <span>Los paisajes mas espectaculares</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">laneTy</a>
+              <a class="lastComents__user" href="">laneTy</a>
               <a href="">
                 <span>Dragon Ball Z Capitulo 41</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">IDiUmi</a>
+              <a class="lastComents__user" href="">IDiUmi</a>
               <a href="">
                 <span>Inuyashiki Last Hero E1</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">AriFTELACk</a>
+              <a class="lastComents__user" href="">AriFTELACk</a>
               <a href="">
                 <span>Los paisajes mas espectaculares</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">ROur</a>
+              <a class="lastComents__user" href="">ROur</a>
               <a href="">
                 <span>Dragon Ball Z Capitulo 41</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">ROTeRgend</a>
+              <a class="lastComents__user" href="">ROTeRgend</a>
               <a href="">
                 <span>Inuyashiki Last Hero E1</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">TIvULaT</a>
+              <a class="lastComents__user" href="">TIvULaT</a>
               <a href="">
                 <span>Los paisajes mas espectaculares</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">Dan</a>
+              <a class="lastComents__user" href="">Dan</a>
               <a href="">
                 <span>Dragon Ball Z Capitulo 41</span>
               </a>
             </li>
             <li>
-              <a class="ult-coment__user" href="">stardust</a>
+              <a class="lastComents__user" href="">stardust</a>
               <a href="">
                 <span>Dragon Ball Z Capitulo 41</span>
               </a>
             </li>
           </ul>
         </div>
-        <div class="topList">
-          <div class="block-header">
+        <div class="block topList topList--post">
+          <div class="block__header">
             <h3>Top Post</h3>
             <select name="" id="">
               <option value="">Ayer</option>
@@ -470,7 +481,7 @@
           <div class="">
             <div class="topList__item">
               <span class="topList__number">1</span>
-              <a href="">Game of Thrones: The Complete Collection</a>
+              <a href="">Game of Thrones: The Collection</a>
               <span class="topList__point">3200</span>
             </div>
             <div class="topList__item">
@@ -535,7 +546,7 @@
             </div>
             <div class="topList__item">
               <span class="topList__number">14</span>
-              <a href="">Luis Miguel - Todos Los Romances (3CD)</a>
+              <a href="">Luis Miguel - Todos Los Romances CD</a>
               <span class="topList__point">498</span>
             </div>
             <div class="topList__item">
@@ -548,8 +559,8 @@
         </div>
       </aside>
       <aside class="sidebar-2">
-        <div class="topList topList--users">
-          <div class="block-header">
+        <div class="block topList topList--users">
+          <div class="block__header">
             <h3>Top Usuarios</h3>
             <select name="" id="">
               <option value="">Ayer</option>
@@ -557,8 +568,8 @@
               <option value="">Mes</option>
             </select>
           </div>
-          <div class="">
-            <div class="topList__item topList__item--first">
+          <div>
+            <div class="topList__item">
               <img src="img/avatar/secondAvatar.png" alt="" />
               <div class="topUser">
                 <a class="topUser__name" href="">walker</a>
@@ -572,7 +583,7 @@
               <span class="topList__point">13200</span>
             </div>
 
-            <div class="topList__item topList__item--second">
+            <div class="topList__item">
               <img src="img/avatar/thirdAvatar.png" alt="" />
               <div class="topUser">
                 <a class="topUser__name" href="">gromit</a>
@@ -635,8 +646,8 @@
         </div>
 
         <div class="tags">
-          <div class="block-header">
-            <h3>Tags Populares</h3>
+          <div class="block__header">
+            <h3>Trending</h3>
             <select name="" id="">
               <option value="">Ayer</option>
               <option value="" selected>Semana</option>
