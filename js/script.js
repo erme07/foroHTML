@@ -1,9 +1,9 @@
 const header = document.querySelector(".header")
 
-const img1 = "url(../img/head/head_1.jpg)";
-const img2 = "url(../img/head/head_2.jpg)";
-const img3 = "url(../img/head/head_3.jpg)";
-const img4 = "url(../img/head/head_4.jpg)";
+const img1 = 'url("https://raw.githubusercontent.com/erme07/foroHTML/master/img/head/head_1.jpg")';
+const img2 = 'url("https://raw.githubusercontent.com/erme07/foroHTML/master/img/head/head_2.jpg")';
+const img3 = 'url("https://raw.githubusercontent.com/erme07/foroHTML/master/img/head/head_3.jpg")';
+const img4 = 'url("https://raw.githubusercontent.com/erme07/foroHTML/master/img/head/head_4.jpg")';
 
 const patterns = [img1, img2, img3, img4]
 
