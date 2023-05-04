@@ -449,10 +449,6 @@ main {
   font-size: 12px;
 }
 
-.ad-left {
-  position: fixed;
-  top: 100px;
-}
 .adWide {
   display: none;
 }
@@ -514,7 +510,39 @@ li.secondSearch {
   display: none;
 }
 
-@media (max-width: 1400px) {
+.ad-left,
+.ad-right {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .aux {
+    display: flex;
+  }
+
+  .content {
+    margin: 0;
+    margin-bottom: 20px;
+    order: 2;
+  }
+  .ad-left,
+  .ad-right {
+    width: calc((100% - 1000px) / 2);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .ad-left img,
+  .ad-right img {
+    position: sticky;
+    top: 10px;
+    margin: 20px auto;
+  }
+  .ad-left {
+    order: 1;
+  }
+  .ad-right {
+    order: 3;
+  }
 }
 
 @media (max-width: 1000px) {
