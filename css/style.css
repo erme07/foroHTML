@@ -178,7 +178,7 @@ body {
 .navBar--bottom .icon-magnify {
   bottom: 4px;
 }
-main {
+.main {
   border-right: 2px dashed var(--borderSeparator);
   padding-left: 10px;
   padding-right: 8px;
@@ -552,7 +552,7 @@ li.secondSearch {
   .content {
     margin-bottom: 0;
   }
-  main {
+  .main {
     flex-basis: 65%;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -616,7 +616,7 @@ li.secondSearch {
   .adWide {
     display: none;
   }
-  main {
+  .main {
     flex-basis: 62%;
     padding-left: 8px;
   }
@@ -682,7 +682,7 @@ li.secondSearch {
   li.secondSearch {
     display: flex;
   }
-  main {
+  .main {
     flex-basis: 100%;
     /* padding-left: 15px; */
   }
