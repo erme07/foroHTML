@@ -125,7 +125,16 @@
             </svg>
           </div>
         </nav>
-        <main class="post__content"></main>
+        <main class="main__content">
+          <div class="post__header">
+            <h2>Post title layout default</h2>
+            <div class="post__nav">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="post__body"></div>
+        </main>
         <aside class="sidebar">
           <div class="perfil">
             <div class="perfil__header">
@@ -136,36 +145,46 @@
             </div>
             <div class="perfil__body">
               <div class="perfil__image">
-                <!-- <img src="img/avatar/secondAvatar.png" alt="" /> -->
-                <span>Diamante</span>
+                <img src="img/avatar/secondAvatar.png" alt="" />
+                <span class="boton">Diamante</span>
               </div>
-              <div class="perfil__stats">
-                <div class="stats__item">
+              <div class="perfil__info">
+                <div class="stats">
                   <span>33</span>
                   <span>Seguidores</span>
                   <svg class="icon">
                     <use xlink:href="img/icon/icons.svg#icon-eye"></use>
                   </svg>
                 </div>
-                <div class="stats__item">
+                <div class="stats">
                   <span>9877</span>
                   <span>Puntos</span>
                   <svg class="icon">
                     <use xlink:href="img/icon/icons.svg#icon-bitcoin"></use>
                   </svg>
                 </div>
-                <div class="stats__item">
+                <div class="stats">
                   <span>21</span>
                   <span>Post</span>
                   <svg class="icon">
                     <use xlink:href="img/icon/icons.svg#icon-document"></use>
                   </svg>
                 </div>
+                <div class="icons">
+                  <img src="img/icon/rango.png" alt="" />
+                  <img src="img/icon/pais.png" alt="" />
+                  <img src="img/icon/genero.png" alt="" />
+                </div>
               </div>
             </div>
             <div class="perfil__footer">
-              <div class="follow"></div>
-              <div class="mensaje"></div>
+              <div class="boton">Seguir Usuario</div>
+              <div class="boton">
+                <svg class="icon">
+                  <use xlink:href="img/icon/icons.svg#icon-email"></use>
+                </svg>
+                <span>MP</span>
+              </div>
             </div>
           </div>
         </aside>

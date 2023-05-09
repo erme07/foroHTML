@@ -1,8 +1,9 @@
-.post__content {
+.main__content {
   flex-basis: 75%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   height: 1000px;
   padding: 10px;
+  border-right: 2px dashed var(--borderSeparator);
 }
 .sidebar {
   width: 25%;
@@ -37,32 +38,82 @@
   gap: 10px;
 }
 .perfil__image {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.perfil__image img {
   width: 120px;
   height: 120px;
   background-color: brown;
 }
-.perfil__stats {
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  font-weight: bold;
+  color: #105cb6;
+  background-color: #e3e8f4;
+}
+
+.perfil__info {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.stats__item {
+.perfil__info .icons {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icons img {
+  height: 20px;
+  width: auto;
+}
+.stats {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed var(--itemBorderColor);
 }
-.stats__item :first-child {
+.stats:nth-child(3) {
+  border-bottom: none;
+}
+.stats :first-child {
   font-size: 18px;
   color: var(--hardTextColor);
   font-weight: bold;
 }
-.stats__item :nth-child(2) {
+.stats :nth-child(2) {
   font-size: 11px;
   color: var(--lightTextColor);
 }
-.stats__item svg {
+.stats svg {
   position: absolute;
   right: 0;
-  top: calc(50% - 7px);
+  top: calc(50% - 12px);
+  font-size: 18px;
+}
+.perfil__footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.perfil__footer .boton {
+  display: flex;
+  gap: 3px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.post__header {
+  border-top: 3px solid var(--mainColor);
+  padding: 10px;
+}
+.post__header h2 {
+  font-size: 24px;
 }
