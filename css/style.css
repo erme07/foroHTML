@@ -10,6 +10,9 @@ a {
 select:focus-visible {
   outline: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --mainBackColor: #e4e8ed;
   --itemBackColor: #ddd;
@@ -76,6 +79,9 @@ body {
   font-size: 12px;
   font-family: Helvetica;
   text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .toTheTop:hover {
   color: var(--textColor);

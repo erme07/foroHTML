@@ -14,3 +14,8 @@ const aleatorio = (inferior = 0, superior = 3) => {
   return inferior + aleatorio;
 }
 header.style.backgroundImage = patterns[aleatorio()];
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("toTheTop"))
+    scrollTo(0, 0);
+})
